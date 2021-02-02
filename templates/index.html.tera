@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> {{ header }} </title>
+    </head>
+
+    <body>
+        <h1>{{ header }}</h1>
+        <form method="POST">
+            <input type="text" name="username">
+            <input type="password" name="password">
+            <button type="submit"> LOG IN! </button>
+        </form>
+    </body>
+</html>

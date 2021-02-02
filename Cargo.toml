@@ -1,0 +1,21 @@
+[package]
+name = "hello-rocket"
+version = "0.1.0"
+authors = ["root"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.6"
+serde = "1.0.123"
+serde_derive = "1.0.123"
+diesel = { version = "1.4.5", features = ["mysql"] }
+dotenv = "0.15.0"
+rand = "0.8.3"
+time = "0.2.25"
+
+[dependencies.rocket_contrib]
+version = "0.4.6"
+default-features = false
+features = ["handlebars_templates", "tera_templates"]
